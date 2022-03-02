@@ -1,0 +1,181 @@
+h1 {
+    text-align: center;
+}
+
+.Letter {
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-weight: bold;
+    color: white;
+}
+
+.Letter-large {
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 3px solid rgba(64, 64, 64, 0.3);
+    flex: 0 0;
+    flex-basis: 50px;
+    height: 50px;
+    font-size: 40px;
+}
+
+.Letter-small {
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 2px solid rgba(64, 64, 64, 0.3);
+    min-width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.Letter-green {
+    background-color: rgb(75, 201, 108);
+}
+
+.Letter-yellow {
+    background-color: rgb(209, 202, 58)
+}
+
+.Letter-gray {
+    background-color: rgb(105, 105, 105);
+}
+
+.Row, .small-guess, .main-guess {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Row {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main-guess {
+    justify-content: right;
+    margin: 10px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.small-guess {
+    display: grid;
+    grid-auto-columns: auto;
+    justify-content: left;
+    margin: 10px;
+}
+
+.GuessContainer {
+    scroll-margin-bottom: 320px;
+    width: 75%;
+    margin: auto;
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.EmojiButton {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.LargeInput {
+    width: 50%;
+    height: 20px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.DivButton {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 3px;
+    margin: 2px;
+    transition: all 100ms ease-out;
+    cursor: pointer;
+}
+
+.DivButton:hover {
+    background-color: rgb(200, 200, 200);
+    transition: all 100ms ease-in;
+}
+
+.FooterWrap {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 40%;
+    min-height: 80px;
+    margin-bottom: 0px;
+}
+
+.Footer {
+    position: relative;
+    display: block;
+    text-align: center;
+    border: 1px solid rgb(85, 85, 85);
+    height: 100%;
+    min-height: 80px;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.App {
+    margin-bottom: max(40vh, 80px);
+}
+
+.TextButton {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.TextButton-small {
+    padding: 2px;
+    font-size: 14px;
+}
+
+.CloseButton {
+    padding: 4px 10px 4px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.RulesButton {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+@media (max-width: 500px) {
+    .Row {
+        width: 100%;
+    }
+    .main-guess, .small-guess {
+        margin: 0px;
+    }
+    .main-guess {
+        width: 60px;
+    }
+    .small-guess {
+        width: auto;
+    }
+    .GuessContainer {
+        width: 100%;
+        margin: 5px;
+    }
+}
